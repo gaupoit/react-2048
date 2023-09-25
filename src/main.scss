@@ -5,8 +5,14 @@
 
 body {
   display: flex;
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,64,124,1) 47%, rgba(0,212,255,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(87, 64, 124, 1) 47%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-image: url("https://eggforce.io/static/media/whitelist--desktop-medium.286bc9f84d22a8affac7.png");
   color: white;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +38,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,64,124,1) 47%, rgb
   border-radius: 7px;
   outline: none;
   position: relative;
+  // background-image: url("./assets//eggs//egg-game-container.png");
 }
 
 .board .cell,
@@ -89,6 +96,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,64,124,1) 47%, rgb
   font-family: "Clear Sans";
   color: #766;
   background-color: #3d2963;
+  background-image: url(./assets/eggs/egg-game-container.png);
+  background-size: contain;
 }
 
 .tile0 {
