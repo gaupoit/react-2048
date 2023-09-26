@@ -54,6 +54,14 @@ body {
   justify-content: space-between;
 }
 
+.wallet-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 25px;
+}
+
 .resetButton {
   background-color: #3d2963;
   color: rgba(255, 255, 255, 0.5);
