@@ -5,7 +5,7 @@ import { Board } from "../helper";
 import useEvent from "../hooks/useEvent";
 import GameOverlay from "./GameOverlay";
 
-const BoardView = () => {
+const BoardView = ({ resultCallback }) => {
   const [board, setBoard] = useState(new Board());
 
   const handleKeyDown = (event) => {
@@ -43,6 +43,7 @@ const BoardView = () => {
     });
 
   const resetGame = () => {
+    resultCallback(board);
     setBoard(new Board());
   };
 

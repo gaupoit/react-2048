@@ -21,7 +21,11 @@ const App = () => {
   const { publicKey } = useAccount();
   return (
     <CasperProvider client={client}>
-      {publicKey ? <BoardView /> : <ConnectWallet />}
+      {publicKey ? (
+        <BoardView resultCallback={(board) => console.log("OK", board)} />
+      ) : (
+        <ConnectWallet />
+      )}
     </CasperProvider>
   );
 };
